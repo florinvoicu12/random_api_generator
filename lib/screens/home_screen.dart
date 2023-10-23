@@ -30,8 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
           final user = users[index];
           // final color = user.gender == 'male' ? Colors.blue : Colors.red;
           return ListTile(
-            title: Text(user.name.first),
-            subtitle: Text(user.phone),
+            title: Text(user.fullName),
+            subtitle: Text(user.location.postcode),
           );
         },
       ),
